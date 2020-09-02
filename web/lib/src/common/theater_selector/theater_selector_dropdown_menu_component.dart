@@ -18,7 +18,7 @@ class TheaterSelectorDropdownMenuComponent {
 
   TheaterListViewModel get _viewModel => TheaterListViewModel.fromStore(_store);
   Theater get selectedTheater => _viewModel.currentTheater;
-  List<Theater> get theaters => _viewModel.theaters;
+  List<Theater> get theaters => _viewModel.theaters.list;
 
   bool get focusTrapVisible => isOpen;
   bool isOpen = false;
